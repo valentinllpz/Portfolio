@@ -1,91 +1,13 @@
 import type { NextPage } from "next";
-import Image from 'next/image';
+import styles from "../styles/Home.module.scss"
 
 const Home: NextPage = () => {
   return (
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ad
-        possimus officia obcaecati dolore fugit. Ullam, sint corporis ipsam
-        laudantium nemo vero eaque est quod id dolores cumque qui cum! Lorem
-        ipsum dolor sit amet consectetur adipisicing elit. Illum ad possimus
-        officia obcaecati dolore fugit. Ullam, sint corporis ipsam laudantium
-        nemo vero eaque est quod id dolores cumque qui cum! Lorem ipsum dolor
-        sit amet consectetur adipisicing elit. Illum ad possimus officia
-        obcaecati dolore fugit. Ullam, sint corporis ipsam laudantium nemo vero
-        eaque est quod id dolores cumque qui cum! Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Illum ad possimus officia obcaecati dolore
-        fugit. Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Illum ad possimus officia obcaecati dolore fugit.
-        Ullam, sint corporis ipsam laudantium nemo vero eaque est quod id
-        dolores cumque qui cum!
+	<div className={styles.home}>
+      <div className={styles.title}>
+        I am Valentin Lugand Lopez, a junior developer looking for my first opportunities.
       </div>
+	</div>
   );
 };
 

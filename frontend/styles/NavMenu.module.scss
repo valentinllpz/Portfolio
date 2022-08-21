@@ -4,32 +4,41 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+	margin: 0;
 }
 
 .navitem {
     margin-left: 5rem;
 }
 
+.homeitem {
+    display: none;
+}
 
 @media only screen and (max-width: vars.$maxWidth) {
     .navmenu {
         position: fixed;
-        left: -100%;
-        top: 5rem;
+        right: -100%;
+        top: 0;
         flex-direction: column;
-        background-color: inherit;
+        backdrop-filter: blur(40px);
         width: 100%;
+		height: 100%;
         text-align: center;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+		justify-content: center;
     }
 
     .navmenu.active {
-        left: 0;
+        right: 0;
     }
 
     .navitem {
         margin: 2.5rem 0;
     }
+
+	.homeitem {
+		display: block;
+	}
+	
 }

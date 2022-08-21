@@ -5,6 +5,9 @@ import NavLink from "./NavLink";
 const NavMenu = ({ isOpen }: { isOpen: boolean }) => {
   return (
     <ul className={isOpen === false ? styles.navmenu : `${styles.navmenu} ${styles.active}`}>
+      <li className={`${styles.homeitem} ${styles.navitem}`}>
+        <NavLink title="Home" />
+      </li>
       <li className={styles.navitem}>
         <NavLink title="About" />
       </li>

@@ -1,29 +1,43 @@
 @use 'vars';
 
+@font-face {
+	font-family: "SF-Compact-Display";
+	src: url('../fonts/SF-Compact-Display/SF-Compact-Display-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SF-Pro-Display";
+	src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SF-Pro-Display";
+	src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Heavy.otf');
+	font-weight: bolder;
+	font-style: normal;
+}
+
 html,
 
 body {
 	padding: 0;
 	margin: 0;
-	height: 100%;
 	background-color: vars.$color-dark;
 }
 
-// * {
-// 	box-sizing: border-box;
-// }
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 
 li {
-    list-style: none;
+	list-style: none;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
