@@ -1,0 +1,13 @@
+@use 'vars';
+
+.light {
+	background-color: vars.$color-light;
+   color: vars.$color-dark;
+   transition: all 0.2s ease-in-out;
+}
+
+.dark {
+   background-color: vars.$color-dark;
+   color: vars.$color-light;
+   transition: all 0.2s ease-in-out;
+}
