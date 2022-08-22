@@ -31,6 +31,7 @@
     .hamburger {
         display: block;
        	cursor: pointer;
+		z-index: 3;
     }
 
     .hamburger.active .bar:nth-child(1) {

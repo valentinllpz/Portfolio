@@ -1,5 +1,5 @@
-import styles from "../styles/BurgerButton.module.scss";
-import { useThemeContext } from "../context/themeContext";
+import styles from "../../styles/BurgerButton.module.scss";
+import { useThemeContext } from "../../context/themeContext";
 
 const BurgerButton = ({
   isOpen,

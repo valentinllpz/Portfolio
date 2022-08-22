@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import styles from "../styles/NavBar.module.scss";
+import styles from "../../styles/NavBar.module.scss";
 import NavMenu from "./NavMenu";
 import BurgerButton from './BurgerButton';
 import Image from 'next/image'
-import { useThemeContext } from '../context/themeContext';
+import { useThemeContext } from '../../context/themeContext';
 
 const Navbar = () => {
 	const themeContext = useThemeContext();

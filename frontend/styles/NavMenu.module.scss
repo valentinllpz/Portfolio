@@ -20,6 +20,7 @@
         position: fixed;
         right: -100%;
         top: 0;
+		padding: 15%;
         flex-direction: column;
         backdrop-filter: blur(40px);
         width: 100%;
@@ -27,6 +28,7 @@
         text-align: center;
         transition: 0.3s;
 		justify-content: center;
+		z-index: 2;
     }
 
     .navmenu.active {
@@ -34,7 +36,7 @@
     }
 
     .navitem {
-        margin: 2.5rem 0;
+        margin: auto;
     }
 
 	.homeitem {

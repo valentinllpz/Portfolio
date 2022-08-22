@@ -1,0 +1,28 @@
+@use 'vars';
+
+.button {
+	padding: 7px 20px;
+	border: 2px solid vars.$color-iris;
+	border-radius: 30px;
+	max-width: fit-content;
+	font-family: SF-Pro-Display;
+	font-weight: 400;
+	font-size: 1.3rem;
+	color: vars.$color-iris;
+	align-self: center;
+	background: transparent;
+	margin-top: 10px;
+}
+
+.button:hover {
+	background-color: vars.$color-iris;
+	color: vars.$color-light;
+}
+
+@media only screen and (max-width: 450px) {
+	.button {
+		padding: 5px 15px;
+		font-size: 1.1rem;
+		margin-top: 5vh;
+	}
+}

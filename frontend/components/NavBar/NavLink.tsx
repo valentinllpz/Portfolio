@@ -1,5 +1,5 @@
-import { useThemeContext } from "../context/themeContext";
-import styles from "../styles/NavLink.module.scss";
+import { useThemeContext } from "../../context/themeContext";
+import styles from "../../styles/NavLink.module.scss";
 
 const NavLink = ({ title }: { title: string }) => {
 	const themeContext = useThemeContext();

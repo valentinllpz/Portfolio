@@ -1,5 +1,5 @@
 import Toggle from "./Toggle";
-import styles from "../styles/NavMenu.module.scss";
+import styles from "../../styles/NavMenu.module.scss";
 import NavLink from "./NavLink";
 
 const NavMenu = ({ isOpen }: { isOpen: boolean }) => {
