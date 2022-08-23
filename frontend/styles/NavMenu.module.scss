@@ -25,7 +25,7 @@
         min-width: 100%;
 		min-height: 100%;
         text-align: center;
-        transition: 0.3s;
+        transition: 0.42s;
 		justify-content: center;
     }
 
@@ -39,11 +39,11 @@
 
     .navmenu.active {
         right: 0;
-		backdrop-filter: blur(8px);
+		backdrop-filter: blur(15px);
     }
 
     .navitem {
-        margin: 5vh;
+        margin: 6vh;
     }
 
 	.homeitem {
