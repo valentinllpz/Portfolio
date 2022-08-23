@@ -6,7 +6,7 @@ import Image from "next/image";
 const Home: NextPage = () => {
   return (
     <>
-      <div className={styles.home}>
+      <section className={styles.home}>
         <div className={styles.helloworld}>
           {"<"}Hello World_{">"}
         </div>
@@ -15,8 +15,8 @@ const Home: NextPage = () => {
           opportunities.
         </h1>
         <Button text="Resume" />
-      </div>
-      <div className={styles.about}>
+      </section>
+      <section className={styles.about}>
         <div className={styles.drawing}>
           <Image
             src="/images/cartoon-large.png"
@@ -26,7 +26,6 @@ const Home: NextPage = () => {
           />
         </div>
         <div className={styles.description}>
-			<div className={styles.test}>About</div>
           <h2 className={styles.h2}>What I do</h2>
           <p className={styles.paragraph}>
             I am a junior developper currently living in Paris. During my
@@ -63,7 +62,7 @@ const Home: NextPage = () => {
             I train at the gym 4 times per week all year long.
           </p>
         </div>
-      </div>
+      </section>
     </>
   );
 };

@@ -15,7 +15,7 @@ const Navbar = () => {
     <header className={styles.header}>
       <nav
         className={
-          themeContext.theme === true
+          themeContext.theme
             ? `${
                 isOpen
                   ? `${styles.navbar} ${styles.hidden}`

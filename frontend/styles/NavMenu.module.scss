@@ -29,6 +29,14 @@
 		justify-content: center;
     }
 
+	.navmenu.dark {
+		background-color: vars.$color-dark-transparent;
+	}
+
+	.navmenu.light {
+		background-color: vars.$color-light-transparent;
+	}
+
     .navmenu.active {
         right: 0;
 		backdrop-filter: blur(8px);
