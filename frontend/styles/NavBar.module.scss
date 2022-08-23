@@ -1,10 +1,25 @@
 @use 'vars';
 
 .navbar {
+	position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
+	backdrop-filter: blur(8px);
     padding: 0 5vw;
 	height: 80px;
-	z-index: 1;
+	width: 100%;
+	z-index: 0;
+}
+
+.navbar.dark {
+	background-color: vars.$color-dark-transparent;
+}
+
+.navbar.light {
+	background-color: vars.$color-light-transparent;
+}
+
+.navbar.hidden {
+	backdrop-filter: unset;
 }

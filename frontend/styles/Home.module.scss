@@ -4,27 +4,55 @@
 	padding: 5vw;
 	display: flex;
 	flex-direction: column;
-	min-height: calc(100% - 80px);
+	min-height: 100%;
 	justify-content: center;
-}
 
-.helloworld {
-	font-family: Source-Code-Pro;
-	font-size: 3.5vw;
-}
+	.helloworld {
+		font-family: Source-Code-Pro;
+		font-size: 3.5vw;
+	}
 
-.title {
-	font-family: SF-Pro-Display;
-	font-weight: 800;
-	font-size: 5.8vw;
-	margin-top: 15px;
+	.h1 {
+		font-family: SF-Pro-Display;
+		font-weight: 800;
+		font-size: 5.8vw;
+		margin-top: 15px;
+	}
 }
 
 
 .about {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	min-height: 100%;
+
+	.drawing {
+		min-width: 50vw;
+		align-self: flex-end;
+		min-height: fit-content;
+		margin-top: 40px;
+	}
+
+	.test {
+		font-family: SF-Pro-Display;
+		font-weight: 800;
+		font-size: 5vw;
+		margin-top: 15px;
+	}
+	.description {
+		min-width: 50vw;
+		min-height: 100vh;
+
+		.h2 {
+			font-family: SF-Pro-Display;
+			font-weight: 600;
+		}
+
+		.paragraph {
+			font-family: SF-Compact-Text;
+			font-weight: 200;
+		}
+	}
 }
 
 
@@ -35,5 +63,9 @@
 
 	.title {
 		font-size: 9.5vw;
+	}
+
+	.about {
+		flex-direction: column;
 	}
 }

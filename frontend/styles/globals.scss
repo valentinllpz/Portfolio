@@ -15,9 +15,30 @@
 }
 
 @font-face {
+	font-family: "SF-Compact-Text";
+	src: url('../fonts/SF-Compact-Text/SF-Compact-Text-Thin.otf');
+	font-weight: 200;
+	font-style: normal;
+}
+
+// @font-face {
+// 	font-family: "SF-Compact-Text";
+// 	src: url('../fonts/SF-Compact-Text/SF-Compact-Text-Light.otf');
+// 	font-weight: 300;
+// 	font-style: normal;
+// }
+
+@font-face {
 	font-family: "SF-Pro-Display";
 	src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Regular.otf');
 	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SF-Pro-Display";
+	src: url('../fonts/SF-Pro-Display/SF-Pro-Display-SemiBold.otf');
+	font-weight: 600;
 	font-style: normal;
 }
 

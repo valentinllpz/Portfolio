@@ -22,21 +22,20 @@
         top: 0;
 		padding: 15%;
         flex-direction: column;
-        backdrop-filter: blur(40px);
-        width: 100%;
-		height: 100%;
+        min-width: 100%;
+		min-height: 100%;
         text-align: center;
         transition: 0.3s;
 		justify-content: center;
-		z-index: 2;
     }
 
     .navmenu.active {
         right: 0;
+		backdrop-filter: blur(8px);
     }
 
     .navitem {
-        margin: auto;
+        margin: 5vh;
     }
 
 	.homeitem {
