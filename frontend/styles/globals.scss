@@ -37,7 +37,7 @@
 
 @font-face {
 	font-family: "SF-Pro-Display";
-	src: url('../fonts/SF-Pro-Display/SF-Pro-Display-SemiBold.otf');
+	src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Semibold.otf');
 	font-weight: 600;
 	font-style: normal;
 }
@@ -49,12 +49,15 @@
 	font-style: normal;
 }
 
-html,
+html {
+	overflow-x: hidden;
+}
 
 body {
 	padding: 0;
 	margin: 0;
 	background-color: vars.$color-dark;
+
 }
 
 * {
