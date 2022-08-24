@@ -26,6 +26,7 @@
 	display: flex;
 	justify-content: flex-start;
 	min-height: 100%;
+	padding-top: 8vw;
 
 	.drawing {
 		min-width: 50vw;
@@ -34,24 +35,27 @@
 		margin-top: 40px;
 	}
 
-	.test {
-		font-family: SF-Pro-Display;
-		font-weight: 800;
-		font-size: 5vw;
-		margin-top: 15px;
-	}
 	.description {
+		padding-left: 2vw;
+		padding-right: 5vw;
 		min-width: 50vw;
 		min-height: 100vh;
 
 		.h2 {
 			font-family: SF-Pro-Display;
 			font-weight: 600;
+			font-size: 3vw;
+			margin-top: 3vh;
+			margin-bottom: 1vh;
+
 		}
 
 		.paragraph {
 			font-family: SF-Compact-Text;
 			font-weight: 200;
+			font-size: 1vw;
+			margin-top: 1vh;
+			margin-bottom: 1vh;
 		}
 	}
 }
