@@ -25,37 +25,36 @@
 .about {
 	display: flex;
 	justify-content: flex-start;
+	align-items: center;
 	min-height: 100%;
-	padding-top: 8vw;
+	padding-top: 80px;
+	background-color: inherit;
 
 	.drawing {
 		min-width: 50vw;
 		align-self: flex-end;
 		min-height: fit-content;
-		margin-top: 40px;
+		background-color: inherit;
 	}
 
 	.description {
 		padding-left: 2vw;
 		padding-right: 5vw;
 		min-width: 50vw;
-		min-height: 100vh;
 
 		.h2 {
 			font-family: SF-Pro-Display;
 			font-weight: 600;
-			font-size: 3vw;
-			margin-top: 3vh;
+			font-size: 4.2vw;
+			margin-top: 0;
 			margin-bottom: 1vh;
-
 		}
 
 		.paragraph {
 			font-family: SF-Compact-Text;
 			font-weight: 200;
-			font-size: 1vw;
-			margin-top: 1vh;
-			margin-bottom: 1vh;
+			font-size: 2.5vh;
+			line-height: 4vh;
 		}
 	}
 }
@@ -73,4 +72,8 @@
 	.about {
 		flex-direction: column;
 	}
+}
+
+@media only screen and (max-width: vars.$maxWidth) {
+
 }
