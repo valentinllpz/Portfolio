@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import styles from "../styles/Home.module.scss";
 import Image from "next/image";
 
+
 const Home: NextPage = () => {
   return (
     <>
@@ -17,12 +18,14 @@ const Home: NextPage = () => {
         <Button text="Resume" />
       </section>
       <section className={styles.about}>
-        <div className={styles.drawing}>
+        <div className={styles.container}>
           <Image
-            src="/images/cartoon-large.png"
-            height={1707}
-            width={2000}
+            src="/images/cartoon-xl.png"
+            height={3532}
+            width={7724}
             alt="cartoon"
+			layout="fill"
+			className={styles.image}
           />
         </div>
         <div className={styles.description}>
@@ -33,7 +36,7 @@ const Home: NextPage = () => {
             autodidact and a natural problem solver, which allows me to adapt to
             any new technology quickly.<br/><br/> I first studied international business
             and worked in Sales / Business Development before taking the
-            decision to pivot and study programming. At 42, I used a wide range
+            decision to pivot and study programming.<br/>At 42, I used a wide range
             of technologies from low-level programming to web development or
             system admnistration. I also participated to a few hackathons and
             enrolled in the HEC Digital Entrepreneur Certificate, which taught me
