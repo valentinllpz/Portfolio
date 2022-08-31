@@ -17,6 +17,7 @@
 .button:hover {
 	background-color: vars.$color-iris;
 	color: vars.$color-light;
+	transition: 0.2s;
 }
 
 @media only screen and (max-width: 450px) {

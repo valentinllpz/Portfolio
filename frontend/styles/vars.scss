@@ -1,12 +1,15 @@
 /////// COLORS /////////
 
-$color-light: rgb(250, 250, 245);
-$color-dark: #1E1E1E;
-$color-dark-transparent: rgba(30, 30, 30, 0.90);
-$color-light-transparent:rgba(250, 250, 245, 0.90);
+$color-light: rgb(250, 250, 250);
+$color-dark: rgb(33, 33, 33);
+$color-dark-transparent: rgba(33, 33, 33, 0.90);
+$color-light-transparent:rgba(250, 250, 250, 0.90);
 
-$color-iris: #5D5FEF;
-
+$color-iris: #487ADA;
+$color-grey: #676767;
+$color-gradient: linear-gradient(45deg,  #5D5FEF, #1D51B4, #5EC6F6, #199DE0, #487ADA, #1B74C9, #487ADA, #199DE0, #5EC6F6, #1D51B4);
+// 487ADA
+// 5D5FEF
 
 ////// RESPONSIVE //////
 
