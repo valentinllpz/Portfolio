@@ -12,12 +12,30 @@
 	align-self: center;
 	background: transparent;
 	margin-top: 1vh;
+	animation: 2s slideUp;
 }
 
 .button:hover {
 	background-color: vars.$color-iris;
 	color: vars.$color-light;
 	transition: 0.2s;
+}
+
+@keyframes slideUp {
+	0% {
+		opacity: 0;
+		transform: translateY(80%);
+	}
+
+	70% {
+		opacity: 0;
+		transform: translateY(80%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
 }
 
 @media only screen and (max-width: 450px) {

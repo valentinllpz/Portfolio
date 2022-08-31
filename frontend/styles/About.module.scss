@@ -41,7 +41,12 @@
 			font-family: SF-Compact-Text;
 			font-weight: 200;
 			font-size: 2.2vh;
-			line-height: 3.4vh;
+			line-height: 3.2vh;
+
+			span {
+				color: vars.$color-iris;
+				font-weight: 400;
+			}
 		}
 	}
 }

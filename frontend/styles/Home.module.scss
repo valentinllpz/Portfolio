@@ -18,12 +18,11 @@
 		letter-spacing: 0.088ch;
 		font-size: 3.2vw;
 		color: vars.$color-grey;
-	}	
-
+	}
 
 	.typewriter {
 		width: 12ch;
-		animation: typing 2s steps(11);
+		animation: typing 1s steps(11);
 		white-space: nowrap;
 		overflow: hidden;
 	}
@@ -35,47 +34,72 @@
 		height: 0.15ch;
 		animation: blink .5s step-end infinite alternate;
 		align-self: flex-end;
-	}
 
-	@keyframes typing { from { width: 0; } }
-	@keyframes blink { 50% { background-color: transparent; } }
+		@keyframes typing {
+			from {
+				width: 0;
+			}
+		}
+
+		@keyframes blink {
+			50% {
+				background-color: transparent;
+			}
+		}
+	}
 
 	.h1 {
 		font-family: SF-Pro-Display;
 		font-weight: 800;
 		font-size: 5.6vw;
 		margin-top: 3vh;
+		animation: 3s ease-in-out slideUp;
+	}
+
+	.highlight {
+		background-image: vars.$color-gradient;
+		background-clip: text;
+		color: rgba(250, 250, 250, 0.10);
+		background-size: 600% 600%;
+
+		animation: HighlightAnimation 12s ease infinite;
+
+		@keyframes HighlightAnimation {
+			0% {
+				background-position: 0% 79%
+			}
+
+			50% {
+				background-position: 100% 22%
+			}
+
+			100% {
+				background-position: 0% 79%
+			}
+		}
 	}
 }
 
+@keyframes slideUp {
+	0% {
+		opacity: 0;
+		transform: translateY(80%);
+	}
 
-.highlight {
-	background-image: vars.$color-gradient;
-	background-clip: text;
-	color: rgba(250, 250, 250, 0.10);
-    background-size: 600% 600%;
+	20% {
+		opacity: 0;
+	}
 
-    -webkit-animation: HighlightAnimation 12s ease infinite;
-    -moz-animation: HighlightAnimation 12s ease infinite;
-    animation: HighlightAnimation 12s ease infinite;
-}
+	50% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
 
-@-webkit-keyframes HighlightAnimation {
-    0%{background-position:0% 79%}
-    50%{background-position:100% 22%}
-    100%{background-position:0% 79%}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
 }
-@-moz-keyframes HighlightAnimation {
-    0%{background-position:0% 79%}
-    50%{background-position:100% 22%}
-    100%{background-position:0% 79%}
-}
-@keyframes HighlightAnimation {
-    0%{background-position:0% 79%}
-    50%{background-position:100% 22%}
-    100%{background-position:0% 79%}
-}
-
 
 @media only screen and (max-width: vars.$maxWidth) {
 
