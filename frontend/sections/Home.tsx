@@ -7,6 +7,7 @@ const Home = () => {
       <div className={styles.helloworld}>
         {"<"}
         <div className={styles.typewriter}>Hello World</div>
+		<div className={styles.cursor}/>
         {">"}
       </div>
       <h1 className={styles.h1}>

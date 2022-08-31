@@ -15,22 +15,30 @@
 		justify-items: center;
 		margin-top: 10vh;
 		font-family: Source-Code-Pro;
-		letter-spacing: 0.075ch;
+		letter-spacing: 0.088ch;
 		font-size: 3.2vw;
 		color: vars.$color-grey;
 	}	
 
 
 	.typewriter {
-		width: 13ch;
-		animation: typing 2s steps(12), blink .5s step-end infinite alternate;
+		width: 12ch;
+		animation: typing 2s steps(11);
 		white-space: nowrap;
 		overflow: hidden;
-		border-right: 1ch solid;
+	}
+
+	.cursor {
+		content: '';
+		background: vars.$color-grey;
+		width: 1ch;
+		height: 0.15ch;
+		animation: blink .5s step-end infinite alternate;
+		align-self: flex-end;
 	}
 
 	@keyframes typing { from { width: 0; } }
-	@keyframes blink { 50% { border-color: transparent; } }
+	@keyframes blink { 50% { background-color: transparent; } }
 
 	.h1 {
 		font-family: SF-Pro-Display;
