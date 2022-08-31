@@ -4,15 +4,16 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	min-height: 100%;
+	min-height: 100vh;
 	padding-top: 80px;
 	background-color: inherit;
+	scroll-snap-align: start;
 
 	.container {
 		min-width: 50vw;
 		height: calc(100vh - 80px);
 		position: relative;
-
+	
 		.image {
 			object-fit: cover;
 		}

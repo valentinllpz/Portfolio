@@ -8,9 +8,11 @@ import { useThemeContext } from "../../context/themeContext";
 const Navbar = () => {
   const themeContext = useThemeContext();
   const [isOpen, setIsOpen] = useState(false);
+  
   const openMenu = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <header className={styles.header}>
       <nav

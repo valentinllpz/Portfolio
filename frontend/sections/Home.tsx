@@ -5,12 +5,14 @@ const Home = () => {
   return (
     <section className={styles.home}>
       <div className={styles.helloworld}>
-        {"<"}Hello World_{">"}
+        {"<"}
+        <div className={styles.typewriter}>Hello World</div>
+        {">"}
       </div>
       <h1 className={styles.h1}>
         I am Valentin Lugand Lopez, a{" "}
-        <span className="highlight">junior developer</span> looking for my first
-        opportunities.
+        <span className={styles.highlight}>junior developer</span> looking for
+        my first opportunities.
       </h1>
       <Button text="Resume" />
     </section>

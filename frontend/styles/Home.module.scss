@@ -6,15 +6,31 @@
 	flex-direction: column;
 	min-height: 100%;
 	justify-content: center;
-
+	scroll-snap-align: start;
 
 	.helloworld {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-items: center;
 		margin-top: 10vh;
 		font-family: Source-Code-Pro;
+		letter-spacing: 0.075ch;
 		font-size: 3.2vw;
 		color: vars.$color-grey;
+	}	
+
+
+	.typewriter {
+		width: 13ch;
+		animation: typing 2s steps(12), blink .5s step-end infinite alternate;
+		white-space: nowrap;
+		overflow: hidden;
+		border-right: 1ch solid;
 	}
 
+	@keyframes typing { from { width: 0; } }
+	@keyframes blink { 50% { border-color: transparent; } }
 
 	.h1 {
 		font-family: SF-Pro-Display;
@@ -22,6 +38,34 @@
 		font-size: 5.6vw;
 		margin-top: 3vh;
 	}
+}
+
+
+.highlight {
+	background-image: vars.$color-gradient;
+	background-clip: text;
+	color: rgba(250, 250, 250, 0.10);
+    background-size: 600% 600%;
+
+    -webkit-animation: HighlightAnimation 12s ease infinite;
+    -moz-animation: HighlightAnimation 12s ease infinite;
+    animation: HighlightAnimation 12s ease infinite;
+}
+
+@-webkit-keyframes HighlightAnimation {
+    0%{background-position:0% 79%}
+    50%{background-position:100% 22%}
+    100%{background-position:0% 79%}
+}
+@-moz-keyframes HighlightAnimation {
+    0%{background-position:0% 79%}
+    50%{background-position:100% 22%}
+    100%{background-position:0% 79%}
+}
+@keyframes HighlightAnimation {
+    0%{background-position:0% 79%}
+    50%{background-position:100% 22%}
+    100%{background-position:0% 79%}
 }
 
 
