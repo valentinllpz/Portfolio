@@ -1,0 +1,20 @@
+@use 'vars';
+
+.projects {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	min-height: 100vh;
+	padding-top: 80px;
+	background-color: inherit;
+	scroll-snap-align: start;
+
+	.h2 {
+		font-family: SF-Pro-Display;
+		font-weight: 600;
+		font-size: 4.5vw;
+		margin-top: 0;
+		margin-bottom: 1vh;
+		color: vars.$color-grey;
+	}
+}
