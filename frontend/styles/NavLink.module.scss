@@ -3,7 +3,7 @@
 .navlink{
 	font-family: 'SF-Compact-Display';
 	font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 	justify-content: center;
 }
 
@@ -20,7 +20,7 @@
 	width: 0px;
 	height: 3px;
 	display: block;
-	margin: auto;
+	margin-top: 2px;
 	border-radius: 3px;
 	background: vars.$color-iris;
 	transition: 0.21s;
@@ -29,34 +29,3 @@
   .navlink:hover::after {
 	width: 100%;
   }
-
-//   ul li a:after {
-// 	background: #203549;
-// 	content: '';
-// 	display: inline-block;
-// 	height: 2px;
-// 	margin: auto;
-// 	position: absolute;;
-// 	bottom: -0px; left: 0; right: 0;
-// 	transition: all 300ms;
-// 	width: 0%;
-//   }
-  
-//   /* active */
-//   ul li.active a { font-weight: 600; }
-  
-//   /* hover */
-//   ul li a:hover,
-//   ul li.active a {
-// 	color: #203549;
-//   }
-  
-//   /* active border */
-//   ul li a:hover:after,
-//   ul li.active a:after {
-// 	width: 100%;
-//   }
-  
-//   /* animasyon aspects */
-//   .left-to-right li a:after { right: inherit; }
-//   .right-to-left li a:after { left: inherit; }
