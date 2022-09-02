@@ -2,10 +2,14 @@
 
 .projects {
 	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	justify-content: center;
+	gap: 3vh;
 	min-height: 100vh;
 	padding-top: 80px;
+	padding-left: 5vw;
+	padding-right: 5vw;
 	background-color: inherit;
 	scroll-snap-align: start;
 
@@ -16,5 +20,66 @@
 		margin-top: 0;
 		margin-bottom: 1vh;
 		color: vars.$color-grey;
+	}
+
+	.reposGrid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 1vw;
+		padding-bottom: 3vh;
+
+		.repoItem {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			background-color: vars.$color-grey-transparent;
+			border-radius: 1vw;
+			padding: 1vw;
+
+			.h3 {
+				font-family: SF-Pro-Display;
+				font-weight: 400;
+				font-size: 1.8vw;
+				margin: 0px;
+				border-top-left-radius: 1vw;
+				border-top-right-radius: 1vw;
+			}
+
+			.repoDescription {
+				font-family: SF-Compact-Text;
+				font-weight: 200;
+				font-size: 2.2vh;
+				line-height: 3.2vh;
+			}
+
+			.repoLink {
+				display: flex;
+				align-items: center;
+				gap: 1ch;
+				font-family: SF-Compact-Text;
+				font-weight: 400;
+				font-size: 2.2vh;
+				line-height: 3.2vh;
+				color: vars.$color-iris;
+				transition: all 0.15s linear;
+			}
+
+			.repoLink:hover {
+				gap: 1.4ch;
+			}
+		}
+
+		.repoItem:hover {
+			background-color: vars.$color-grey-transparent-hover;
+			transition: ease-in-out 0.3s;
+		}
+	}
+}
+
+@media only screen and (max-width: vars.$maxWidth) {
+	.projects {
+		.reposGrid {
+			grid-template-columns: 1fr;
+		}
 	}
 }
