@@ -25,7 +25,7 @@
 	.reposGrid {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 1vw;
+		grid-gap: 15px;
 		padding-bottom: 3vh;
 
 		.repoItem {
@@ -33,22 +33,20 @@
 			flex-direction: column;
 			justify-content: space-between;
 			background-color: vars.$color-grey-transparent;
-			border-radius: 1vw;
-			padding: 1vw;
+			border-radius: 10px;
+			padding: 15px;
 
 			.h3 {
 				font-family: SF-Pro-Display;
 				font-weight: 400;
-				font-size: 1.8vw;
+				font-size: 1.2rem;
 				margin: 0px;
-				border-top-left-radius: 1vw;
-				border-top-right-radius: 1vw;
 			}
 
 			.repoDescription {
 				font-family: SF-Compact-Text;
 				font-weight: 200;
-				font-size: 2.2vh;
+				font-size: 1rem;
 				line-height: 3.2vh;
 			}
 
@@ -58,14 +56,14 @@
 				gap: 1ch;
 				font-family: SF-Compact-Text;
 				font-weight: 400;
-				font-size: 2.2vh;
+				font-size: 1rem;
 				line-height: 3.2vh;
 				color: vars.$color-iris;
 				transition: all 0.15s linear;
 			}
 
 			.repoLink:hover {
-				gap: 1.4ch;
+				gap: 1.5ch;
 			}
 		}
 
@@ -78,6 +76,10 @@
 
 @media only screen and (max-width: vars.$maxWidth) {
 	.projects {
+		.h2 {
+			font-size: 6vh;
+		}
+
 		.reposGrid {
 			grid-template-columns: 1fr;
 		}
