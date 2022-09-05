@@ -31,7 +31,7 @@
 		.h2 {
 			font-family: SF-Pro-Display;
 			font-weight: 600;
-			font-size: calc(5vmin + 3rem);
+			font-size: calc(3.8vmax + 1.2rem);
 			margin-top: 0;
 			margin-bottom: 1vh;
 			color: vars.$color-grey;
@@ -40,8 +40,8 @@
 		.paragraph {
 			font-family: SF-Compact-Text;
 			font-weight: 200;
-			font-size: calc(0.4vmin + 1rem);
-			line-height: calc(0.9vmin + 1rem);
+			font-size: calc(0.2vmax + 1rem);
+			line-height: 2.2ch;
 
 			span {
 				color: vars.$color-iris;

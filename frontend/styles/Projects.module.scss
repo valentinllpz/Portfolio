@@ -16,7 +16,7 @@
 	.h2 {
 		font-family: SF-Pro-Display;
 		font-weight: 600;
-		font-size: 4.5vw;
+		font-size: calc(3.8vmax + 1.2rem);
 		margin-top: 0;
 		margin-bottom: 1vh;
 		color: vars.$color-grey;
@@ -33,21 +33,21 @@
 			flex-direction: column;
 			justify-content: space-between;
 			background-color: vars.$color-grey-transparent;
-			border-radius: 10px;
-			padding: 15px;
+			border-radius: 15px;
+			padding: calc(0.5vmax + 15px);
 
 			.h3 {
 				font-family: SF-Pro-Display;
 				font-weight: 400;
-				font-size: 1.2rem;
+				font-size: calc(0.4vmax + 1.2rem);
 				margin: 0px;
 			}
 
 			.repoDescription {
 				font-family: SF-Compact-Text;
 				font-weight: 200;
-				font-size: 1rem;
-				line-height: 3.2vh;
+				font-size: calc(0.2vmax + 1rem);
+				line-height: 2.2ch;
 			}
 
 			.repoLink {
@@ -76,10 +76,6 @@
 
 @media only screen and (max-width: vars.$maxWidth) {
 	.projects {
-		.h2 {
-			font-size: 6vh;
-		}
-
 		.reposGrid {
 			grid-template-columns: 1fr;
 		}
