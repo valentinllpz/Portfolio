@@ -53,7 +53,7 @@ const Projects = () => {
             <RepoCard key={latestRepo.id} repo={latestRepo} />
           ))}
       </div>
-	  <Button text="Visit GitHub"/>
+	  <Button text="Visit GitHub" type="button"/>
     </section>
   );
 };

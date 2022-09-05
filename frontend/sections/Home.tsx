@@ -15,7 +15,7 @@ const Home = () => {
         <span className={styles.highlight}>junior developer</span> looking for
         my first opportunities.
       </h1>
-      <Button text="Resume" />
+      <Button text="Resume" type="button" />
     </section>
   );
 };
