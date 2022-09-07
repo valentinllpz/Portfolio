@@ -1,25 +1,43 @@
 @use 'vars';
 
 .form {
-	width: 45vw;
+	width: 100%;
 	min-height: calc(100vh - 80px);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 
 	.inputContainer {
-		font-family: SF-Pro-Display;
-		font-weight: 300;
-		font-size: calc(0.4vmax + 1rem);
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
 
 		.inputLabel {
-			display: flex;
-			flex-direction: column;
-			gap: 10px;
+			font-family: SF-Pro-Display;
+			font-weight: 300;
+			font-size: calc(0.2vmax + 1rem);
+		}
+
+		.inputField {
+			font-family: SF-Compact-Text;
+			font-weight: 300;
+			font-size: calc(0.2vmax + 0.8rem);
+			background-color: vars.$color-grey-transparent;
+			outline: none;
+			border: none;
+			border-radius: 10px;
+			padding: 1.5ch;
+			color: inherit;
+			outline-style: solid;
+			outline-color: vars.$color-grey-transparent;
+		}
+
+		.errorMsg {
+			font-family: SF-Compact-Text;
+			font-weight: 300;
+			font-size: calc(0.2vmax + 0.8rem);
+			color: vars.$color-red;
+			margin: 0;
 		}
 	}
-}
-
-@media only screen and (max-width: vars.$maxWidth) {
-
 }

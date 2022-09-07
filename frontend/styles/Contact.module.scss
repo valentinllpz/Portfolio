@@ -14,7 +14,8 @@
 	scroll-snap-align: start;
 
 	.leftContainer {
-		min-width: 45vw;
+		width: 100%;
+
 		.h2 {
 			font-family: SF-Pro-Display;
 			font-weight: 600;
@@ -33,4 +34,10 @@
 	}
 }
 
-@media only screen and (max-width: vars.$maxWidth) {}
+@media only screen and (max-width: vars.$maxWidth) {
+	.contact {
+		flex-direction: column;
+
+	}
+
+}

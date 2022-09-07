@@ -7,7 +7,7 @@
 	max-width: fit-content;
 	font-family: SF-Pro-Display;
 	font-weight: 400;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	color: vars.$color-iris;
 	align-self: center;
 	background: transparent;
@@ -40,6 +40,6 @@
 @media only screen and (max-width: 450px) {
 	.button {
 		padding: 5px 15px;
-		font-size: 1.1rem;
+		font-size: 1rem;
 	}
 }

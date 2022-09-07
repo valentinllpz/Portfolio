@@ -4,7 +4,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <section className={styles.about}>
-      <div className={styles.container}>
+      <div className={styles.imageContainer}>
         <Image
           src="/images/cartoon-xl.png"
           alt="cartoon"
