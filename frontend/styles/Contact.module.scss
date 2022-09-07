@@ -2,9 +2,9 @@
 
 .contact {
 	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
 	gap: 3vh;
 	min-height: 100vh;
 	padding-top: 80px;
@@ -13,25 +13,24 @@
 	background-color: inherit;
 	scroll-snap-align: start;
 
-	.h2 {
-		font-family: SF-Pro-Display;
-		font-weight: 600;
-		font-size: calc(3.8vmax + 1.2rem);
-		margin-top: 0;
-		margin-bottom: 1vh;
-		color: vars.$color-grey;
-	}
+	.leftContainer {
+		min-width: 45vw;
+		.h2 {
+			font-family: SF-Pro-Display;
+			font-weight: 600;
+			font-size: calc(3.8vmax + 1.2rem);
+			margin-top: 0;
+			margin-bottom: 1vh;
+			color: vars.$color-grey;
+		}
 
-	.h3 {
-		font-family: SF-Pro-Display;
-		font-weight: 400;
-		font-size: calc(0.4vmax + 1rem);
-		margin: 0px;
+		.h3 {
+			font-family: SF-Pro-Display;
+			font-weight: 400;
+			font-size: calc(0.4vmax + 1rem);
+			margin: 0px;
+		}
 	}
-
-	
 }
 
-@media only screen and (max-width: vars.$maxWidth) {
-
-}
+@media only screen and (max-width: vars.$maxWidth) {}

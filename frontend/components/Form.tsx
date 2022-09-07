@@ -11,8 +11,7 @@ const useForm = (callback: Function) => {
     message: "",
   });
 
-  const [errors, setErrors] = useState<IFormErrors>({
-  });
+  const [errors, setErrors] = useState<IFormErrors>({});
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -34,10 +33,8 @@ const useForm = (callback: Function) => {
     if (!values.message.trim()) {
       errors.message = "Message field is empty";
     }
-	if (errors.name || errors.email || errors.message)
-    	return errors;
-	else 
-		return {};
+    if (errors.name || errors.email || errors.message) return errors;
+    else return {};
   }
 
   const handleChange = (e: { target: { name: string; value: string } }) => {
@@ -55,22 +52,22 @@ const useForm = (callback: Function) => {
     setIsSubmitting(true);
   };
 
-  useEffect (() => {	
-	if (isSubmitting && Object.keys(errors).length === 0) {		
-		callback();
-	}
+  useEffect(() => {
+    if (isSubmitting && Object.keys(errors).length === 0) {
+      callback();
+    }
   });
 
   return { handleChange, handleSubmit, values, errors };
 };
 
-const Form = ({submitForm} : {submitForm : () => void}) => {
+const Form = ({ submitForm }: { submitForm: () => void }) => {
   const { handleChange, handleSubmit, values, errors } = useForm(submitForm);
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.inputContainer}>
-        <label>
+        <label className={styles.inputLabel}>
           Name
           <input
             className={styles.inputField}
@@ -81,11 +78,11 @@ const Form = ({submitForm} : {submitForm : () => void}) => {
             value={values.name}
             onChange={handleChange}
           />
-          {errors.name && <p>{errors.name}</p>}
+          {errors.name && <p className={styles.error}>{errors.name}</p>}
         </label>
       </div>
       <div className={styles.inputContainer}>
-        <label>
+        <label className={styles.inputLabel}>
           Email
           <input
             className={styles.inputField}
@@ -96,21 +93,22 @@ const Form = ({submitForm} : {submitForm : () => void}) => {
             value={values.email}
             onChange={handleChange}
           />
-          {errors.email && <p>{errors.email}</p>}
+          {errors.email && <p className={styles.error}>{errors.email}</p>}
         </label>
       </div>
       <div className={styles.inputContainer}>
-        Message
-        <label>
+        <label className={styles.inputLabel}>
+		Message
           <textarea
             className={styles.inputField}
             name="message"
             maxLength={5000}
             placeholder="Type your message here"
+			rows={10}
             value={values.message}
             onChange={handleChange}
           />
-          {errors.message && <p>{errors.message}</p>}
+          {errors.message && <p className={styles.error}>{errors.message}</p>}
         </label>
       </div>
       <Button text="Hit me up" type="submit" />

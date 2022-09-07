@@ -10,13 +10,14 @@ const Contact = () => {
   }
   return (
     <section className={styles.contact}>
-      <h2 className={styles.h2}>Contact me</h2>
-      <h3 className={styles.h3}>
-        Want to work together or have any questions? Let’s talk.
-      </h3>
-	  {!isSubmitted ? 
-      <Form submitForm={submitForm}/> 
-	  : <p>submitted</p>}
+      <div className={styles.leftContainer}>
+        <h2 className={styles.h2}>Contact me</h2>
+        <h3 className={styles.h3}>
+          Want to work together or have any questions? Let’s talk.
+        </h3>
+      </div>
+
+      {!isSubmitted ? <Form submitForm={submitForm} /> : <p>submitted</p>}
     </section>
   );
 };

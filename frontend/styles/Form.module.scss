@@ -1,11 +1,22 @@
 @use 'vars';
 
 .form {
-	.h3 {
+	width: 45vw;
+	min-height: calc(100vh - 80px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+
+	.inputContainer {
 		font-family: SF-Pro-Display;
-		font-weight: 400;
+		font-weight: 300;
 		font-size: calc(0.4vmax + 1rem);
-		margin: 0px;
+
+		.inputLabel {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
 	}
 }
 
