@@ -1,9 +1,5 @@
 import { createContext, useState, useContext } from "react";
-
-interface IThemeContext {
-  theme: boolean;
-  toggleTheme?: () => void;
-}
+import IThemeContext from "../interfaces/IThemeContext";
 
 const defaultThemeContext: IThemeContext = {
   theme: true,
