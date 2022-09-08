@@ -2,7 +2,7 @@
 
 .form {
 	width: 100%;
-	min-height: calc(100vh - 80px);
+	height: fit-content;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -10,18 +10,21 @@
 	.inputContainer {
 		display: flex;
 		flex-direction: column;
+		flex-wrap: wrap;
 		gap: 10px;
+		height: fit-content;
 
 		.inputLabel {
+			margin-top: 15px;
 			font-family: SF-Pro-Display;
 			font-weight: 300;
-			font-size: calc(0.2vmax + 1rem);
+			font-size: 1rem;
 		}
 
 		.inputField {
 			font-family: SF-Compact-Text;
 			font-weight: 300;
-			font-size: calc(0.2vmax + 0.8rem);
+			font-size: 1rem;
 			background-color: vars.$color-grey-transparent;
 			outline: none;
 			border: none;
@@ -30,12 +33,14 @@
 			color: inherit;
 			outline-style: solid;
 			outline-color: vars.$color-grey-transparent;
+			resize: vertical;
+			overflow: auto;
 		}
 
 		.errorMsg {
 			font-family: SF-Compact-Text;
 			font-weight: 300;
-			font-size: calc(0.2vmax + 0.8rem);
+			font-size: 1rem;
 			color: vars.$color-red;
 			margin: 0;
 		}

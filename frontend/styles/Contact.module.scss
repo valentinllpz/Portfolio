@@ -1,17 +1,20 @@
 @use 'vars';
 
 .contact {
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	justify-content: left;
 	align-items: center;
 	gap: 3vh;
-	min-height: 100vh;
+	min-height: calc(100vh - 100px);
 	padding-top: 80px;
 	padding-left: 5vw;
 	padding-right: 5vw;
 	background-color: inherit;
 	scroll-snap-align: start;
+	overflow: auto;
+	height: fit-content;
 
 	.leftContainer {
 		width: 100%;
@@ -32,12 +35,73 @@
 			margin: 0px;
 		}
 	}
+
+	.confirmation {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		min-width: 100%;
+		font-family: SF-Pro-Display;
+		font-weight: 800;
+		font-size: 3.1rem;
+		margin: 0px;
+		animation: 2s ease-in-out slideUp;
+
+
+		.imageContainer {
+			width: 200px;
+			height: 200px;
+			position: relative;
+			margin-bottom: 2vh;
+		}
+
+		p {
+			font-family: SF-Compact-Text;
+			font-weight: 200;
+			font-size: 1rem;
+			line-height: 2.2ch;
+		}
+	}
 }
 
 @media only screen and (max-width: vars.$maxWidth) {
 	.contact {
 		flex-direction: column;
 
+		.confirmation {
+			font-size: 2rem;
+
+			.imageContainer {
+				width: 150px;
+				height: 150px;
+			}
+
+			p {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+@keyframes slideUp {
+	0% {
+		opacity: 0;
+		transform: translateY(80%);
 	}
 
+	20% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
 }
