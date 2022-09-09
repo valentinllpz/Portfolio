@@ -84,7 +84,7 @@ const Form = ({ submitForm }: { submitForm: () => void }) => {
         </div>
         <div className={styles.inputContainer}>
           <label htmlFor="email" className={styles.inputLabel}>
-		  <b>Email</b>
+            <b>Email</b>
           </label>
           <input
             className={styles.inputField}
@@ -99,7 +99,7 @@ const Form = ({ submitForm }: { submitForm: () => void }) => {
         </div>
         <div className={styles.inputContainer}>
           <label htmlFor="message" className={styles.inputLabel}>
-		  	<b>Message</b>
+            <b>Message</b>
           </label>
           <textarea
             className={`${styles.inputField} ${styles.inputMessage}`}
@@ -115,7 +115,9 @@ const Form = ({ submitForm }: { submitForm: () => void }) => {
           )}
         </div>
       </div>
-      <Button text="Hit me up" type="submit" />
+      <div className={styles.buttonLink}>
+        <Button text="Hit me up" type="submit" />
+      </div>
     </form>
   );
 };

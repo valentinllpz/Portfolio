@@ -45,7 +45,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section className={styles.projects}>
+    <section className={styles.projects} id="Projects">
       <h2>Latest projects</h2>
       <div className={styles.reposGrid}>
         {repos &&
@@ -53,7 +53,9 @@ const Projects = () => {
             <RepoCard key={latestRepo.id} repo={latestRepo} />
           ))}
       </div>
-      <Button text="Visit GitHub" type="button" />
+      <a className={styles.buttonLink} href="https://github.com/valentinllpz" target="_blank">
+        <Button text="Visit GitHub" type="button" />
+      </a>
     </section>
   );
 };

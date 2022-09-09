@@ -4,7 +4,6 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	justify-content: center;
 	gap: 3vh;
 	min-height: 100vh;
 	padding-top: 80px;
@@ -12,15 +11,6 @@
 	padding-right: 5vw;
 	background-color: inherit;
 	scroll-snap-align: start;
-
-	// .h2 {
-	// 	font-family: SF-Pro-Display;
-	// 	font-weight: 600;
-	// 	font-size: calc(3.8vmax + 1.2rem);
-	// 	margin-top: 0;
-	// 	margin-bottom: 1vh;
-	// 	color: vars.$color-grey;
-	// }
 
 	.reposGrid {
 		display: grid;
@@ -50,6 +40,7 @@
 				gap: 1ch;
 				color: vars.$color-iris;
 				transition: all 0.15s linear;
+				text-decoration: none;
 			}
 
 			.repoLink:hover {
@@ -61,6 +52,10 @@
 			background-color: vars.$color-grey-transparent-hover;
 			transition: ease-in-out 0.2s;
 		}
+	}
+	
+	.buttonLink {
+		align-self: center;
 	}
 }
 

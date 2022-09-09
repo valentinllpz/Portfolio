@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className={styles.about}>
+    <section className={styles.about} id="About">
       <div className={styles.imageContainer}>
         <Image
           src="/images/cartoon-xl.png"

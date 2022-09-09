@@ -1,15 +1,15 @@
 @use 'vars';
 
 .button {
+	cursor: pointer;
 	padding: 7px 20px;
 	border: 2px solid vars.$color-iris;
 	border-radius: 30px;
-	max-width: fit-content;
+	width: fit-content;
 	font-family: SF-Pro-Display;
 	font-weight: 400;
 	font-size: 1.2rem;
 	color: vars.$color-iris;
-	align-self: center;
 	background: transparent;
 	animation: 2s slideUp;
 }

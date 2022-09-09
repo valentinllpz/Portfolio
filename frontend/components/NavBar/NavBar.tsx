@@ -8,7 +8,7 @@ import { useThemeContext } from "../../context/themeContext";
 const Navbar = () => {
   const themeContext = useThemeContext();
   const [isOpen, setIsOpen] = useState(false);
-  
+
   const openMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -30,15 +30,17 @@ const Navbar = () => {
               }`
         }
       >
-        <Image
-          src={
-            themeContext.theme
-              ? "/images/logo-light.svg"
-              : "/images/logo-dark.svg"
-          }
-          height={40}
-          width={40}
-        />
+        <a href="/#Home">
+          <Image
+            src={
+              themeContext.theme
+                ? "/images/logo-light.svg"
+                : "/images/logo-dark.svg"
+            }
+            height={40}
+            width={40}
+          />
+        </a>
         <NavMenu isOpen={isOpen} />
         <BurgerButton isOpen={isOpen} openMenu={openMenu} />
       </nav>

@@ -10,7 +10,7 @@ const Contact = () => {
     setIsSubmitted(true);
   }
   return (
-    <section className={styles.contact}>
+    <section className={styles.contact} id="Contact">
       {!isSubmitted ? (
         <>
           <div className={styles.leftContainer}>
@@ -31,7 +31,7 @@ const Contact = () => {
           Your message has been sent.
           <p>
             I will get back in touch with you as soon as I can. Meanwhile, why
-            don’t you add me on LinkedIn ?
+            don’t you add me on <a href="https://www.linkedin.com/in/vlugand-lopez/" target="_blank">LinkedIn</a> ?
           </p>
         </div>
       )}
