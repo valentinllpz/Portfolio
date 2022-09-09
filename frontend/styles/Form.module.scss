@@ -34,7 +34,7 @@
 			outline-style: solid;
 			outline-color: vars.$color-grey-transparent;
 			resize: vertical;
-			overflow: auto;
+			max-height: 50vh;
 		}
 
 		.errorMsg {

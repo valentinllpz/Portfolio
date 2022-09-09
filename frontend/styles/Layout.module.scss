@@ -16,24 +16,6 @@
 	width: 100vw;
 }
 
-.main {
-	display: flex;
-	flex-direction: column;
-	// scroll-snap-type: y mandatory;
-	// overflow-y: scroll;
-	// // min-height: 100vh;
-	// // min-width: 100vw;
-	// // height: fit-content;
-	// // width: fit-content;
-	// -ms-overflow-style: none;  /* IE and Edge */
-	// scrollbar-width: none;  /* Firefox */
-}
-
-// .main::-webkit-scrollbar {
-// 	display: none; /* Chrome */
-//   }
-  
-
 @media only screen and (max-width: vars.$maxWidth) {
 	.main {
 		scroll-snap-type: unset;

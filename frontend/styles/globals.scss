@@ -79,6 +79,8 @@ body {
 	padding: 0;
 	margin: 0;
 	background-color: vars.$color-dark;
+	display: flex;
+	flex-direction: column;
 }
 
 * {

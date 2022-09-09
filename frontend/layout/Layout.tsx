@@ -7,13 +7,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   const themeContext = useThemeContext();
 
   return (
-    <div
-      className={
-        themeContext.theme
-          ? `${styles.main} ${styles.dark}`
-          : `${styles.main} ${styles.light}`
-      }
-    >
+    <div className={themeContext.theme ? styles.dark : styles.light}>
       <Navbar />
       {children}
       <Footer />

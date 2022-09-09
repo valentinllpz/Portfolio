@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className={styles.header}>
+    <>
       <nav
         className={
           themeContext.theme
@@ -42,7 +42,7 @@ const Navbar = () => {
         <NavMenu isOpen={isOpen} />
         <BurgerButton isOpen={isOpen} openMenu={openMenu} />
       </nav>
-    </header>
+    </>
   );
 };
 
