@@ -10,9 +10,9 @@ const Home = () => {
 		<div className={styles.cursor}/>
         {">"}
       </div>
-      <h1 className={styles.h1}>
+      <h1>
         I am Valentin Lugand Lopez, a{" "}
-        <span className={styles.highlight}>junior developer</span> looking for
+        <span>junior developer</span> looking for
         my first opportunities.
       </h1>
       <Button text="Resume" type="button" />

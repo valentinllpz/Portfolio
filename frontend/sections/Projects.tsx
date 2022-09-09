@@ -10,10 +10,10 @@ type listUserReposResponse = Endpoints["GET /repos/{owner}/{repo}"]["response"];
 const RepoCard = ({ repo }: { repo: listUserReposResponse["data"] }) => {
   return (
     <div className={styles.repoItem}>
-      <h3 className={styles.h3}>{repo.name}</h3>
-      <p className={styles.repoDescription}>{repo.description}</p>
+      <div className={styles.repoTitle}>{repo.name}</div>
+      <p>{repo.description}</p>
       <a href={repo.clone_url} className={styles.repoLink}>
-        <p>View Repository </p>
+        View Repository
         <div>&rarr;</div>
       </a>
     </div>
@@ -46,14 +46,14 @@ const Projects = () => {
 
   return (
     <section className={styles.projects}>
-      <h2 className={styles.h2}>Latest projects</h2>
+      <h2>Latest projects</h2>
       <div className={styles.reposGrid}>
         {repos &&
           repos.map((latestRepo) => (
             <RepoCard key={latestRepo.id} repo={latestRepo} />
           ))}
       </div>
-	  <Button text="Visit GitHub" type="button"/>
+      <Button text="Visit GitHub" type="button" />
     </section>
   );
 };

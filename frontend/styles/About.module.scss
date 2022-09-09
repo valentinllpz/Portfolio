@@ -26,28 +26,6 @@
 		padding-right: 5vw;
 		width: 100%;
 		align-self: center;
-
-
-		.h2 {
-			font-family: SF-Pro-Display;
-			font-weight: 600;
-			font-size: calc(3.8vmax + 1.2rem);
-			margin-top: 0;
-			margin-bottom: 1vh;
-			color: vars.$color-grey;
-		}
-
-		.paragraph {
-			font-family: SF-Compact-Text;
-			font-weight: 200;
-			font-size: calc(0.2vmax + 0.85rem);
-			line-height: 2.2ch;
-
-			span {
-				color: vars.$color-iris;
-				font-weight: 400;
-			}
-		}
 	}
 }
 

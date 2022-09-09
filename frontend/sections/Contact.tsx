@@ -14,10 +14,8 @@ const Contact = () => {
       {!isSubmitted ? (
         <>
           <div className={styles.leftContainer}>
-            <h2 className={styles.h2}>Contact me</h2>
-            <h3 className={styles.h3}>
-              Want to work together or have any questions? Let’s talk.
-            </h3>
+            <h2>Contact me</h2>
+            <h3>Want to work together or have any questions? <span><b>Let’s talk.</b></span></h3>
           </div>
           <Form submitForm={submitForm} />{" "}
         </>

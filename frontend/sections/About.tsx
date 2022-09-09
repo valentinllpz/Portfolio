@@ -13,7 +13,7 @@ const About = () => {
         />
       </div>
       <div className={styles.description}>
-        <h2 className={styles.h2}>About me</h2>
+        <h2>About me</h2>
         <p className={styles.paragraph}>
           I am a passionate junior developper with a background in business and
           I currently live in Paris. I consider myself as an

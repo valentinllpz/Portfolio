@@ -13,14 +13,14 @@
 	background-color: inherit;
 	scroll-snap-align: start;
 
-	.h2 {
-		font-family: SF-Pro-Display;
-		font-weight: 600;
-		font-size: calc(3.8vmax + 1.2rem);
-		margin-top: 0;
-		margin-bottom: 1vh;
-		color: vars.$color-grey;
-	}
+	// .h2 {
+	// 	font-family: SF-Pro-Display;
+	// 	font-weight: 600;
+	// 	font-size: calc(3.8vmax + 1.2rem);
+	// 	margin-top: 0;
+	// 	margin-bottom: 1vh;
+	// 	color: vars.$color-grey;
+	// }
 
 	.reposGrid {
 		display: grid;
@@ -36,30 +36,18 @@
 			border-radius: 15px;
 			padding: calc(0.5vmax + 15px);
 
-			.h3 {
+			.repoTitle {
 				font-family: SF-Pro-Display;
 				font-weight: 400;
-				font-size: calc(0.4vmax + 1rem);
+				font-size: 1.2rem;
 				margin: 0px;
-			}
-
-			.repoDescription {
-				font-family: SF-Compact-Text;
-				font-weight: 200;
-				font-size: calc(0.2vmax + 0.8rem);
-				line-height: 2.2ch;
-				margin-top: 1.2ch;
-				margin-bottom: 0;
 			}
 
 			.repoLink {
 				display: flex;
 				align-items: center;
+				width: fit-content;
 				gap: 1ch;
-				font-family: SF-Compact-Text;
-				font-weight: 400;
-				font-size: 1rem;
-				line-height: calc(0.2vmax + 1rem);
 				color: vars.$color-iris;
 				transition: all 0.15s linear;
 			}

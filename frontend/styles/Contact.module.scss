@@ -1,7 +1,6 @@
 @use 'vars';
 
 .contact {
-	position: relative;
 	display: flex;
 	flex-direction: row;
 	justify-content: left;
@@ -17,23 +16,8 @@
 	height: fit-content;
 
 	.leftContainer {
-		width: 100%;
-
-		.h2 {
-			font-family: SF-Pro-Display;
-			font-weight: 600;
-			font-size: calc(3.8vmax + 1.2rem);
-			margin-top: 0;
-			margin-bottom: 1vh;
-			color: vars.$color-grey;
-		}
-
-		.h3 {
-			font-family: SF-Pro-Display;
-			font-weight: 400;
-			font-size: calc(0.4vmax + 1rem);
-			margin: 0px;
-		}
+		min-width: 50vw;
+		max-width: 50vw;
 	}
 
 	.confirmation {
