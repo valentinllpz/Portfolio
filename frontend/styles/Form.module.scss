@@ -5,44 +5,56 @@
 	height: fit-content;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: center;
 
-	.inputContainer {
+	.inputs {
+		
 		display: flex;
 		flex-direction: column;
-		flex-wrap: wrap;
-		gap: 10px;
-		height: fit-content;
+		justify-content: space-evenly;
+		margin-bottom: 5vh;
 
-		.inputLabel {
-			margin-top: 15px;
-			font-family: SF-Pro-Display;
-			font-weight: 300;
-			font-size: 1rem;
-		}
+		.inputContainer {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			gap: 10px;
+			height: fit-content;
 
-		.inputField {
-			font-family: SF-Compact-Text;
-			font-weight: 300;
-			font-size: 1rem;
-			background-color: vars.$color-grey-transparent;
-			outline: none;
-			border: none;
-			border-radius: 10px;
-			padding: 1.5ch;
-			color: inherit;
-			outline-style: solid;
-			outline-color: vars.$color-grey-transparent;
-			resize: vertical;
-			max-height: 50vh;
-		}
+			.inputLabel {
+				margin-top: 15px;
+				font-family: SF-Pro-Display;
+				font-weight: 300;
+				font-size: 1rem;
+			}
 
-		.errorMsg {
-			font-family: SF-Compact-Text;
-			font-weight: 300;
-			font-size: 1rem;
-			color: vars.$color-red;
-			margin: 0;
+			.inputField {
+				font-family: SF-Compact-Text;
+				font-weight: 300;
+				font-size: 1rem;
+				background-color: vars.$color-grey-transparent;
+				outline: none;
+				border: none;
+				border-radius: 10px;
+				padding: 1.1ch;
+				color: inherit;
+				outline-style: solid;
+				outline-color: vars.$color-grey-transparent;
+			}
+
+			.inputMessage {
+				resize: vertical;
+				max-height: 40vh;
+				min-height: 100px;
+			}
+
+			.errorMsg {
+				font-family: SF-Compact-Text;
+				font-weight: 300;
+				font-size: 1rem;
+				color: vars.$color-red;
+				margin: 0;
+			}
 		}
 	}
 }

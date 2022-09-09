@@ -3,16 +3,16 @@
 .contact {
 	display: flex;
 	flex-direction: row;
-	justify-content: left;
+	justify-content: center;
 	align-items: center;
-	gap: 3vh;
+	gap: 30px;
 	min-height: calc(100vh - 100px);
 	padding-top: 80px;
 	padding-left: 5vw;
 	padding-right: 5vw;
+	padding-bottom: 5vh;
 	background-color: inherit;
 	scroll-snap-align: start;
-	overflow: auto;
 	height: fit-content;
 
 	.leftContainer {
@@ -27,6 +27,7 @@
 		text-align: center;
 		align-items: center;
 		min-width: 100%;
+		min-height: 100%;
 		font-family: SF-Pro-Display;
 		font-weight: 800;
 		font-size: 3.1rem;
