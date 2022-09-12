@@ -12,12 +12,11 @@
 	padding-right: 5vw;
 	padding-bottom: 5vh;
 	background-color: inherit;
-	scroll-snap-align: start;
 	height: fit-content;
 
 	.leftContainer {
-		min-width: 400px;
-		max-width: 50vw;
+		min-width: 500px;
+		width: 50vw;
 	}
 
 	.confirmation {
