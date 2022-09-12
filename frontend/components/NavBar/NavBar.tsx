@@ -41,7 +41,7 @@ const Navbar = () => {
             width={40}
           />
         </a>
-        {/* <NavMenu isOpen={isOpen} /> */}
+        <NavMenu isOpen={isOpen} />
         <BurgerButton isOpen={isOpen} openMenu={openMenu} />
       </nav>
     </>
