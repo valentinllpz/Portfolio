@@ -44,10 +44,14 @@ const Navbar = () => {
             width={40}
           />
         </a>
-        {width && width > 768 ? (
-			<DesktopMenu/>
-        ) : (
-          <MobileMenu isOpen={isOpen} openMenu={openBurgerMenu}/>
+        {width && (
+          <>
+            {width < 768 ? (
+              <MobileMenu isOpen={isOpen} openMenu={openBurgerMenu} />
+            ) : (
+              <DesktopMenu />
+            )}
+          </>
         )}
       </nav>
     </>

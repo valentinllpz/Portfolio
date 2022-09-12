@@ -12,6 +12,7 @@ const Footer = () => {
           src="/images/footer.svg"
           alt="footer"
           layout="fill"
+		  priority={true}
           className={styles.image}
         />
       </div>

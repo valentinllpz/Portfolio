@@ -1,19 +1,21 @@
 import { useThemeContext } from "../../context/themeContext";
+import INavLinkProps from "../../interfaces/INavLinkProps";
 import styles from "../../styles/NavLink.module.scss";
 
-const NavLink = ({ title }: { title: string }) => {
+const NavLink = (props : INavLinkProps) => {
   const themeContext = useThemeContext();
 
   return (
     <a
-      href={`/#${title}`}
+      href={`/#${props.title}`}
+	  onClick={props.onClick}
       className={
         themeContext.theme
           ? `${styles.navlink} ${styles.dark}`
           : `${styles.navlink} ${styles.light}`
       }
     >
-      {title}
+      {props.title}
     </a>
   );
 };

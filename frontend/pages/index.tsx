@@ -5,7 +5,6 @@ import Projects from "../sections/Projects";
 import Contact from "../sections/Contact";
 
 
-
 const Index: NextPage = () => {
   return (
     <>

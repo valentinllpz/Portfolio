@@ -5,7 +5,7 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 30px;
+	gap: 5vw;
 	min-height: calc(100vh - 100px);
 	padding-top: 80px;
 	padding-left: 5vw;
@@ -15,7 +15,7 @@
 	height: fit-content;
 
 	.leftContainer {
-		min-width: 500px;
+		min-width: 380px;
 		width: 50vw;
 	}
 
