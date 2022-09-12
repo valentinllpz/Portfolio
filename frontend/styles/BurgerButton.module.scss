@@ -1,7 +1,6 @@
 @use 'vars';
 
 .hamburger {
-    display: none;
 	background: transparent;
 	border: none;
 	cursor: pointer;
@@ -13,7 +12,6 @@
     width: 35px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 

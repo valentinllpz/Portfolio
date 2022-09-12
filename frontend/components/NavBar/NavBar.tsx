@@ -1,15 +1,18 @@
 import { useState } from "react";
 import styles from "../../styles/NavBar.module.scss";
-import NavMenu from "./NavMenu";
-import BurgerButton from "./BurgerButton";
 import Image from "next/image";
 import { useThemeContext } from "../../context/themeContext";
+import useWindowDimensions from "../../utils/useWindowDimensions";
+import DesktopMenu from "./DesktopMenu";
+import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
   const themeContext = useThemeContext();
+  const { width } = useWindowDimensions();
+
   const [isOpen, setIsOpen] = useState(false);
 
-  const openMenu = () => {
+  const openBurgerMenu = () => {
     setIsOpen(!isOpen);
   };
 
@@ -41,8 +44,11 @@ const Navbar = () => {
             width={40}
           />
         </a>
-        <NavMenu isOpen={isOpen} />
-        <BurgerButton isOpen={isOpen} openMenu={openMenu} />
+        {width && width > 768 ? (
+			<DesktopMenu/>
+        ) : (
+          <MobileMenu isOpen={isOpen} openMenu={openBurgerMenu}/>
+        )}
       </nav>
     </>
   );

@@ -1,6 +1,6 @@
 import { styled } from "@mui/material/styles";
 import Switch, { SwitchProps } from "@mui/material/Switch";
-import { useThemeContext } from '../../context/themeContext';
+import { useThemeContext } from "../../context/themeContext";
 
 const IOSSwitch = styled(Switch)(({ theme }) => ({
   width: 42,
@@ -65,11 +65,14 @@ const IOSSwitch = styled(Switch)(({ theme }) => ({
 }));
 
 export default function Toogle() {
-	const themeContext = useThemeContext();
+  const themeContext = useThemeContext();
 
   const handleChange = () => {
     themeContext.toggleTheme?.();
   };
-
-  return <IOSSwitch sx={{ m: 1 }} defaultChecked onChange={handleChange}/>;
+  if (themeContext.theme) {
+    return <IOSSwitch sx={{ m: 1 }} checked={true} onChange={handleChange} />;
+  } else {
+    return <IOSSwitch sx={{ m: 1 }} checked={false} onChange={handleChange} />;
+  }
 }
