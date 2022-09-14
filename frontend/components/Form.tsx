@@ -54,6 +54,7 @@ const Form = ({ submitForm }: { submitForm: () => void }) => {
           {errors.message && (
             <p className={styles.errorMsg}>{errors.message}</p>
           )}
+          {errors.status && <p className={styles.errorMsg}>{errors.status}</p>}
         </div>
       </div>
       <div className={styles.buttonLink}>

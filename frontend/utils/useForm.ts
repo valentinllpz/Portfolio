@@ -9,7 +9,12 @@ const useForm = (callback: Function) => {
     message: "",
   });
 
-  const [errors, setErrors] = useState<IFormErrors>({});
+  const [errors, setErrors] = useState<IFormErrors>({
+    name: "",
+    email: "",
+    message: "",
+    status: "",
+  });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -44,7 +49,7 @@ const useForm = (callback: Function) => {
     });
   };
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
+  const handleSubmit =  (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setErrors(validateInfo(values));
     setIsSubmitting(true);
@@ -52,7 +57,26 @@ const useForm = (callback: Function) => {
 
   useEffect(() => {
     if (isSubmitting && Object.keys(errors).length === 0) {
-      callback();
+
+      fetch("/api/sendgrid", {
+        method: "POST",
+        headers: {
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      }).then((res) => {
+        if (res.status === 200) {			
+          setErrors({});
+		  callback();
+        } else {
+          setErrors({
+            ...errors,
+            status:
+              "An error occured. Please retry later or send me an email directly at vll.letstalk@gmail.com",
+          });
+        }
+      });
     }
   });
 
