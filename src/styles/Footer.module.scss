@@ -1,0 +1,42 @@
+@use 'vars';
+
+.footer {
+	background-color: inherit;
+	max-width: 100vw;
+	height: 80px;
+	margin-top: auto;
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+
+	.imageContainer {
+		min-width: 500px;	
+		min-height: 100px;
+		max-width: 500px;	
+		max-height: 100px;
+		position: absolute;
+		left: calc(50vw - 250px);
+		z-index: -1;
+
+	}
+
+	.icons {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+		padding-top: 20px;
+		padding-bottom: 5px;
+		.iconLink {
+			color: inherit;
+		}
+	}
+
+	.text {
+		text-align: center;
+		font-family: Source-Code-Pro;
+		font-weight: 400;
+		font-size: 0.7rem;
+		line-height: 2.2ch;
+	}
+}

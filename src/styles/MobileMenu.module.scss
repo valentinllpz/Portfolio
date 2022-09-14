@@ -1,0 +1,55 @@
+@use 'vars';
+
+@keyframes slideLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(80%);
+	}
+
+	20% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+.navmenu {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 15%;
+	min-width: 100vw;
+	min-height: 100vh;
+	backdrop-filter: blur(15px);
+	// animation: 1s ease-in slideLeft;
+	z-index: 1;
+}
+
+.navmenu.dark {
+	background-color: vars.$color-dark-transparent;
+}
+
+.navmenu.light {
+	background-color: vars.$color-light-transparent;
+}
+
+.navitem {
+	margin: 6vh;
+}
+
+.homeitem {
+	display: block;
+}

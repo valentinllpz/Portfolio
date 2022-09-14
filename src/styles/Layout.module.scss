@@ -1,0 +1,24 @@
+@use 'vars';
+
+.light {
+	background-color: vars.$color-light;
+	color: vars.$color-dark;
+	transition: all 0.3s ease-in-out;
+	height: 100vh;
+	width: 100vw;
+}
+
+.dark {
+	background-color: vars.$color-dark;
+	color: vars.$color-light;
+	transition: all 0.3s ease-in-out;
+	height: 100vh;
+	width: 100vw;
+}
+
+@media only screen and (max-width: vars.$maxWidth) {
+	.main {
+		height: 100vh;
+		width: 100vw;
+	}
+}

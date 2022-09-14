@@ -1,0 +1,67 @@
+@use 'vars';
+
+.projects {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 3vh;
+	min-height: 100vh;
+	padding-top: 80px;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	background-color: inherit;
+
+	.reposGrid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 15px;
+		padding-bottom: 3vh;
+
+		.repoItem {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			background-color: vars.$color-grey-transparent;
+			border-radius: 15px;
+			padding: calc(0.5vmax + 15px);
+
+			.repoTitle {
+				font-family: SF-Pro-Display;
+				font-weight: 400;
+				font-size: 1.2rem;
+				margin: 0px;
+			}
+
+			.repoLink {
+				display: flex;
+				align-items: center;
+				width: fit-content;
+				gap: 1ch;
+				color: vars.$color-iris;
+				transition: all 0.15s linear;
+				text-decoration: none;
+			}
+
+			.repoLink:hover {
+				gap: 1.5ch;
+			}
+		}
+
+		.repoItem:hover {
+			background-color: vars.$color-grey-transparent-hover;
+			transition: ease-in-out 0.2s;
+		}
+	}
+	
+	.buttonLink {
+		align-self: center;
+	}
+}
+
+@media only screen and (max-width: vars.$maxWidth) {
+	.projects {
+		.reposGrid {
+			grid-template-columns: 1fr;
+		}
+	}
+}

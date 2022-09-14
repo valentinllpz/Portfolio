@@ -1,0 +1,69 @@
+@use 'vars';
+
+.home {
+	display: flex;
+	flex-direction: column;
+	padding-top: 80px;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	min-height: 100vh;
+	justify-content: center;
+	gap: 3vh;
+
+	.helloworld {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-items: center;
+		font-family: Source-Code-Pro;
+		letter-spacing: 0.088ch;
+		font-size: calc(2vw + 1rem);
+		color: vars.$color-grey;
+	}
+
+	.typewriter {
+		width: 12ch;
+		animation: typing 1s steps(11);
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	.cursor {
+		content: '';
+		background: vars.$color-grey;
+		width: 1ch;
+		height: 0.15ch;
+		animation: blink .5s step-end infinite alternate;
+		align-self: flex-end;
+
+		@keyframes typing {
+			from {
+				width: 0;
+			}
+		}
+
+		@keyframes blink {
+			50% {
+				background-color: transparent;
+			}
+		}
+	}
+
+	.buttonLink {
+		align-self: center;
+	}
+}
+
+
+@media only screen and (max-width: vars.$maxWidth) {
+
+	.home {
+		.helloworld {
+			font-size: 5.5vw;
+		}
+
+		.h1 {
+			font-size: 9.5vw;
+		}
+	}
+}

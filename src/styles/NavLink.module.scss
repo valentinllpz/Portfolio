@@ -1,0 +1,32 @@
+@use 'vars';
+
+.navlink{
+	font-family: 'SF-Pro-Display';
+	font-weight: 500;
+    font-size: 1.2rem;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.dark{
+	color: vars.$color-light;
+}
+
+.light{
+	color: vars.$color-dark
+}
+
+.navlink::after {
+	content: '';
+	width: 0px;
+	height: 3px;
+	display: block;
+	margin: auto;
+	border-radius: 3px;
+	background: vars.$color-iris;
+	transition: 0.21s;
+  }
+  
+  .navlink:hover::after {
+	width: 100%;
+  }
