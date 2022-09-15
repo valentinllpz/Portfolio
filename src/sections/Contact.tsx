@@ -16,7 +16,7 @@ const Contact = () => {
           <div className={styles.leftContainer}>
 		  <div className={styles.imageContainer}>
             <Image
-              src="/images/photoCV.png"
+              src="/images/profile.png"
               alt="Valentin Lugand Lopez"
               layout="fill"
             />
