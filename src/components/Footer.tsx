@@ -10,17 +10,17 @@ const Footer = () => {
       <div className={styles.imageContainer}>
         <Image
           src="/images/footer.svg"
-          alt="footer"
+          alt="footer shape"
           layout="fill"
 		  priority={true}
           className={styles.image}
         />
       </div>
       <div className={styles.icons}>
-        <a className={styles.iconLink} href="https://github.com/valentinllpz" target="_blank">
+        <a className={styles.iconLink} href="https://github.com/valentinllpz" target="_blank" rel="noreferrer">
           <GitHubIcon color="inherit" />
         </a>
-        <a className={styles.iconLink} href="https://github.com/valentinllpz" target="_blank">
+        <a className={styles.iconLink} href="https://www.linkedin.com/in/vlugand-lopez/" target="_blank" rel="noreferrer">
           <LinkedInIcon color="inherit" />
         </a>
         <a className={styles.iconLink} href="valentin.ll@outlook.com" target="_blank">

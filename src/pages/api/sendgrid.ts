@@ -1,7 +1,7 @@
 import sendgrid from "@sendgrid/mail";
 import { NextApiRequest, NextApiResponse } from "next";
 
-export default async function (req : NextApiRequest, res : NextApiResponse) {
+export default async function sg (req : NextApiRequest, res : NextApiResponse) {
   sendgrid.setApiKey(process.env.SENDGRID_API_KEY as string);
   const msg = {
     to: "lugandlopez.valentin@gmail.com",

@@ -11,7 +11,6 @@
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
-    "@fullpage/react-fullpage": "^0.1.27",
     "@mui/icons-material": "^5.10.3",
     "@mui/material": "^5.10.1",
     "@octokit/rest": "^19.0.4",
@@ -28,6 +27,8 @@
     "@types/node": "18.7.6",
     "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
+	"@typescript-eslint/eslint-plugin": "^5.0.0",
+	"@typescript-eslint/parser": "^5.0.0",
     "eslint": "8.22.0",
     "eslint-config-next": "12.2.5",
     "typescript": "4.7.4"
