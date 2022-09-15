@@ -20,7 +20,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           key="desc"
         />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link rel="preload" href="/fonts/Source-Code-Pro/SourceCodePro-Regular.ttf" as="font" type="font/ttf" crossOrigin="" />
+		<link rel="preload" href="/fonts/SF-Pro-Display/SF-Pro-Display-Heavy.otf" as="font" type="font/otf" crossOrigin="" />
+		<link rel="preload" href="/fonts/SF-Pro-Display/SF-Pro-Display-Medium.otf" as="font" type="font/otf" crossOrigin="" />
+		<link rel="preload" href="/fonts/SF-Pro-Display/SF-Pro-Display-Regular.otf" as="font" type="font/otf" crossOrigin="" />
+		<link rel="preload" href="/fonts/SF-Compact-Text/SF-Compact-Text-Thin.otf" as="font" type="font/otf" crossOrigin="" />
+		<link rel="preload" href="/fonts/SF-Compact-Text/SF-Compact-Text-Light.otf" as="font" type="font/otf" crossOrigin="" />
+		<link rel="preload" href="/fonts/SF-Compact-Text/SF-Compact-Text-Medium.otf" as="font" type="font/otf" crossOrigin="" />
       </Head>
       <div className={themeContext.theme ? styles.dark : styles.light}>
         <Navbar />
