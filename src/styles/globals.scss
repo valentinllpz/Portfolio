@@ -8,6 +8,27 @@
 }
 
 @font-face {
+	font-family: "SF-Pro-Display";
+	src: url('/fonts/SF-Pro-Display/SF-Pro-Display-Heavy.otf');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SF-Pro-Display";
+	src: url('/fonts/SF-Pro-Display/SF-Pro-Display-Medium.otf');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SF-Pro-Display";
+	src: url('/fonts/SF-Pro-Display/SF-Pro-Display-Regular.otf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: "SF-Compact-Text";
 	src: url('/fonts/SF-Compact-Text/SF-Compact-Text-Thin.otf');
 	font-weight: 200;
@@ -23,52 +44,11 @@
 
 @font-face {
 	font-family: "SF-Compact-Text";
-	src: url('/fonts/SF-Compact-Text/SF-Compact-Text-Regular.otf');
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "SF-Compact-Text";
-	src: url('/fonts/SF-Compact-Text/SF-Compact-Text-Semibold.otf');
+	src: url('/fonts/SF-Compact-Text/SF-Compact-Text-Medium.otf');
 	font-weight: 500;
 	font-style: normal;
 }
 
-@font-face {
-	font-family: "SF-Compact-Text";
-	src: url('/fonts/SF-Compact-Text/SF-Compact-Text-Bold.otf');
-	font-weight: 600;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "SF-Pro-Display";
-	src: url('/fonts/SF-Pro-Display/SF-Pro-Display-Regular.otf');
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "SF-Pro-Display";
-	src: url('/fonts/SF-Pro-Display/SF-Pro-Display-Medium.otf');
-	font-weight: 500;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "SF-Pro-Display";
-	src: url('/fonts/SF-Pro-Display/SF-Pro-Display-Semibold.otf');
-	font-weight: 600;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "SF-Pro-Display";
-	src: url('/fonts/SF-Pro-Display/SF-Pro-Display-Heavy.otf');
-	font-weight: 800;
-	font-style: normal;
-}
 
 @keyframes HighlightAnimation {
 	0% {
@@ -142,8 +122,8 @@ h1 {
 
 h2 {
 	font-family: SF-Pro-Display;
-	font-weight: 600;
-	font-size: 4.5rem;
+	font-weight: 800;
+	font-size: 4rem;
 	margin-top: 0;
 	margin-bottom: 1vh;
 	color: vars.$color-grey;
@@ -187,11 +167,11 @@ p {
 @media only screen and (max-width: vars.$maxWidth) {
 
 	h1 {
-		font-size: 9.5vw;
+		font-size: 10vw;
 	}
 
 	h2 {
-		font-size: 3.2rem;
+		font-size: 3rem;
 	}
 
 }

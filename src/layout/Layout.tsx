@@ -20,6 +20,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           key="desc"
         />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="preload" href="/fonts/Source-Code-Pro/SourceCodePro-Regular.ttf" as="font" type="font/ttf" crossOrigin="" />
       </Head>
       <div className={themeContext.theme ? styles.dark : styles.light}>
         <Navbar />
