@@ -16,7 +16,19 @@
 
 	.leftContainer {
 		min-width: 380px;
-		width: 50vw;
+		max-width: 400px;
+		display: flex;
+		flex-direction: column;
+
+		.imageContainer {
+			width: 200px;
+			height: 200px;
+			position: relative;
+			margin-bottom: 2vh;
+			justify-self: center;
+			align-self: center;
+		}
+
 	}
 
 	.confirmation {

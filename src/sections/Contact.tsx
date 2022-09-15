@@ -14,6 +14,13 @@ const Contact = () => {
       {!isSubmitted ? (
         <>
           <div className={styles.leftContainer}>
+		  <div className={styles.imageContainer}>
+            <Image
+              src="/images/photoCV.png"
+              alt="Valentin Lugand Lopez"
+              layout="fill"
+            />
+          </div>
             <h2>Contact me</h2>
             <h3>Want to work together or have any questions? <span><b>Let’s talk.</b></span></h3>
           </div>

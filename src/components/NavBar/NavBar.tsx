@@ -43,8 +43,8 @@ const Navbar = () => {
                   : "/images/logo-dark.svg"
               }
 			  alt="logo"
-              height={40}
-              width={40}
+              height={36}
+              width={36}
             />
           </a>
         </Link>
