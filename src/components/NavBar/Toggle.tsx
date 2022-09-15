@@ -1,5 +1,5 @@
 import { styled } from "@mui/material/styles";
-import Switch, { SwitchProps } from "@mui/material/Switch";
+import Switch from "@mui/material/Switch";
 import { useThemeContext } from "../../context/themeContext";
 
 const IOSSwitch = styled(Switch)(({ theme }) => ({
