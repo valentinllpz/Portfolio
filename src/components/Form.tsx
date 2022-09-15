@@ -9,9 +9,12 @@ const Form = ({ submitForm }: { submitForm: () => void }) => {
     <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.inputs}>
         <div className={styles.inputContainer}>
-          <label htmlFor="name" className={styles.inputLabel}>
-            <b>Name</b>
-          </label>
+          <div className={styles.fieldHead}>
+            <label htmlFor="name" className={styles.inputLabel}>
+              <b>Name</b>
+            </label>
+            {errors.name && <p className={styles.errorMsg}>{errors.name}</p>}
+          </div>
           <input
             className={styles.inputField}
             type="text"
@@ -21,12 +24,14 @@ const Form = ({ submitForm }: { submitForm: () => void }) => {
             value={values.name}
             onChange={handleChange}
           />
-          {errors.name && <p className={styles.errorMsg}>{errors.name}</p>}
         </div>
         <div className={styles.inputContainer}>
-          <label htmlFor="email" className={styles.inputLabel}>
-            <b>Email</b>
-          </label>
+		<div className={styles.fieldHead}>
+            <label htmlFor="email" className={styles.inputLabel}>
+              <b>Email</b>
+            </label>
+            {errors.email && <div className={styles.errorMsg}>{errors.email}</div>}
+          </div>
           <input
             className={styles.inputField}
             type="email"
@@ -36,12 +41,14 @@ const Form = ({ submitForm }: { submitForm: () => void }) => {
             value={values.email}
             onChange={handleChange}
           />
-          {errors.email && <p className={styles.errorMsg}>{errors.email}</p>}
         </div>
         <div className={styles.inputContainer}>
-          <label htmlFor="message" className={styles.inputLabel}>
-            <b>Message</b>
-          </label>
+		<div className={styles.fieldHead}>
+            <label htmlFor="message" className={styles.inputLabel}>
+              <b>Message</b>
+            </label>
+            {errors.message && <p className={styles.errorMsg}>{errors.message}</p>}
+          </div>
           <textarea
             className={`${styles.inputField} ${styles.inputMessage}`}
             name="message"
@@ -51,10 +58,7 @@ const Form = ({ submitForm }: { submitForm: () => void }) => {
             value={values.message}
             onChange={handleChange}
           />
-          {errors.message && (
-            <p className={styles.errorMsg}>{errors.message}</p>
-          )}
-          {errors.status && <p className={styles.errorMsg}>{errors.status}</p>}
+          {errors.status ? <p className={styles.errorMsg}>{errors.status}</p> : <p className={styles.errorMsg}></p> }
         </div>
       </div>
       <div className={styles.buttonLink}>
