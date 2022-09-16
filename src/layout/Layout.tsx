@@ -13,7 +13,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setPreload(true);
-    }, 1200);
+    }, 2000);
 
     return () => clearTimeout(timeout);
   }, []);
