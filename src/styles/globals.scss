@@ -1,5 +1,7 @@
 @use 'vars';
 
+// FONTS -------------------------------------------------------
+
 @font-face {
 	font-family: "Source-Code-Pro";
 	src: url('/fonts/Source-Code-Pro/SourceCodePro-Regular.ttf');
@@ -49,6 +51,7 @@
 	font-style: normal;
 }
 
+// HOMESCREEN ANIMATION -------------------------------------------
 
 @keyframes HighlightAnimation {
 	0% {
@@ -85,6 +88,31 @@
 	}
 }
 
+// MENU ANIMATION -------------------------------------------------
+
+.animMenu-enter {
+	opacity: 0;
+	transform: translateX(100%);
+}
+
+.animMenu-enter-active {
+	opacity: 1;
+	transform: translateX(0);
+	transition: opacity 420ms, transform 420ms;
+}
+
+.animMenu-exit {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.animMenu-exit-active {
+	opacity: 1;
+	transform: translateX(100%);
+	transition: opacity 420ms, transform 420ms;
+}
+
+// BASIC STYLING -------------------------------------------------
 
 html {
 	overflow-x: hidden;
@@ -174,27 +202,4 @@ p {
 		font-size: 3rem;
 	}
 
-}
-
-
-.animMenu-enter {
-	opacity: 0;
-	transform: translateX(100%);
-}
-
-.animMenu-enter-active {
-	opacity: 1;
-	transform: translateX(0);
-	transition: opacity 420ms, transform 420ms;
-}
-
-.animMenu-exit {
-	opacity: 1;
-	transform: translateX(0);
-}
-
-.animMenu-exit-active {
-	opacity: 1;
-	transform: translateX(100%);
-	transition: opacity 420ms, transform 420ms;
 }
