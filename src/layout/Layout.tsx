@@ -11,11 +11,17 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   const [preload, setPreload] = useState(false);
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
+    const onPageLoad = () => {
       setPreload(true);
-    }, 1500);
-
-    return () => clearTimeout(timeout);
+    };
+    if (document.readyState === "complete") {
+      onPageLoad();
+    } else {
+      window.addEventListener("load", onPageLoad);
+      // Remove the event listener when component unmounts
+      return () => window.removeEventListener("load", onPageLoad);
+    }
+    return () => {};
   }, []);
 
   return (
