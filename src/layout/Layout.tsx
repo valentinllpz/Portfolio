@@ -18,7 +18,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       onPageLoad();
     } else {
       window.addEventListener("load", onPageLoad);
-      // Remove the event listener when component unmounts
       return () => window.removeEventListener("load", onPageLoad);
     }
     return () => {};

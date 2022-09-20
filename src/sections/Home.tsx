@@ -14,7 +14,7 @@ const Home = () => {
         I am Valentin Lugand Lopez, a <span>junior developer</span> looking for
         my first opportunities.
       </h1>
-      <a className={styles.buttonLink} href="" target="_blank">
+      <a className={styles.buttonLink} href="/vlugandlopezCV.pdf" target="_blank">
         <Button text="Resume" type="button" />
       </a>
     </section>
