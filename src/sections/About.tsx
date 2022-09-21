@@ -15,7 +15,7 @@ const About = () => {
       <div className={styles.description}>
         <h2>About me</h2>
         <p className={styles.paragraph}>
-          I am a passionate junior developper with a background in business and
+          I am a passionate junior developer with a background in business and
           I currently live in Paris. I consider myself as an
           <span> autodidact</span> and a <span>natural problem solver</span>,
           which allows me to adapt to any new technology quickly.
