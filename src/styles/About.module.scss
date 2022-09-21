@@ -29,7 +29,7 @@
 }
 
 
-@media only screen and (max-width: vars.$maxWidth) {
+@media only screen and (max-width: vars.$mobileWidth) {
 
 	.about {
 		flex-direction: column;
@@ -51,3 +51,13 @@
 	}
 }
 
+@media only screen and (min-width: vars.$bigscreenWidth) {
+
+	.about {
+
+		.imageContainer {
+			margin-left: 5vw;
+		}
+	}	
+
+}

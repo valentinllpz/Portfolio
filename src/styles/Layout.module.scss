@@ -16,9 +16,11 @@
 	width: 100vw;
 }
 
-@media only screen and (max-width: vars.$maxWidth) {
-	.main {
-		height: 100vh;
-		width: 100vw;
+@media only screen and (min-width: 1800px) {
+	.mainContainer {
+		margin-top: auto;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: vars.$bigscreenWidth;
 	}
 }

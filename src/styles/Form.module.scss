@@ -82,7 +82,7 @@
 	}
 }
 
-@media only screen and (max-width: vars.$maxWidth) {
+@media only screen and (max-width: vars.$mobileWidth) {
 	.form {
 		min-width: 100%;
 		max-width: 90vw;

@@ -26,3 +26,21 @@
 .navbar.hidden {
 	backdrop-filter: unset;
 }
+
+
+@media only screen and (min-width: vars.$bigscreenWidth) {
+	.navbar {
+		position: fixed;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		backdrop-filter: blur(15px);
+		padding-left: calc(5vw + (100vw - vars.$bigscreenWidth) / 2);
+		padding-right: calc(5vw + (100vw - vars.$bigscreenWidth) / 2);
+		height: 65px;
+		width: 100vw;
+		transition: all 0.3s ease-in-out;
+		z-index: 1;
+	}
+
+}

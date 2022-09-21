@@ -73,7 +73,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       {preload ? (
         <div className={themeContext.theme ? styles.dark : styles.light}>
           <Navbar />
-          {children}
+          <div className={styles.mainContainer}>{children}</div>
           <Footer />
         </div>
       ) : (

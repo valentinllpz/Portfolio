@@ -43,7 +43,7 @@
 	}
 }
 
-@media only screen and (max-width: vars.$maxWidth) {
+@media only screen and (max-width: vars.$mobileWidth) {
 	.footer {
 		width: 100%;
 

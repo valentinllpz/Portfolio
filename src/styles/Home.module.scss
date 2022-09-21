@@ -55,16 +55,21 @@
 }
 
 
-@media only screen and (max-width: vars.$maxWidth) {
+@media only screen and (max-width: vars.$mobileWidth) {
 
 	.home {
 		padding-bottom: 12vh;
 		.helloworld {
 			font-size: 5.8vw;
 		}
+	}
+}
 
-		.h1 {
-			font-size: 9.5vw;
+@media only screen and (min-width: vars.$bigscreenWidth) {
+
+	.home {
+		.helloworld {
+			font-size: 3.5rem;
 		}
 	}
 }
