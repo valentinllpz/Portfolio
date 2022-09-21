@@ -16,6 +16,10 @@
 	width: 100vw;
 }
 
+.mainContainer {
+	background-color: inherit;
+}
+
 @media only screen and (min-width: 1800px) {
 	.mainContainer {
 		margin-top: auto;

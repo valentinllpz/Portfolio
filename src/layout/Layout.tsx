@@ -26,11 +26,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Head>
-        <title>Valentin Lugand Lopez | Junior Developper | Paris</title>
+        <title>Valentin Lugand Lopez | Junior Developer | Paris</title>
         <meta charSet="utf-8" />
         <meta
           name="description"
-          content="Looking for a junior developper in Paris or remote? Checkout my portfolio built with NextJS and Typescript!"
+          content="Looking for a junior developer in Paris or remote? Checkout my portfolio built with NextJS and Typescript!"
           key="desc"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
