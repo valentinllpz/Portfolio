@@ -23,6 +23,8 @@
 			background-color: vars.$color-grey-transparent;
 			border-radius: 15px;
 			padding: calc(0.5vmax + 15px);
+			text-decoration: none;
+			color: inherit;
 
 			.repoTitle {
 				font-family: SF-Pro-Display;
@@ -40,8 +42,10 @@
 				transition: all 0.15s linear;
 				text-decoration: none;
 			}
+		}
 
-			.repoLink:hover {
+		.repoItem:hover {
+			.repoLink {
 				gap: 1.5ch;
 			}
 		}
@@ -51,7 +55,7 @@
 			transition: ease-in-out 0.2s;
 		}
 	}
-	
+
 	.buttonLink {
 		align-self: center;
 	}

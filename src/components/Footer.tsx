@@ -18,13 +18,13 @@ const Footer = () => {
       </div>
       <div className={styles.icons}>
         <a className={styles.iconLink} href="https://github.com/valentinllpz" target="_blank" rel="noreferrer">
-          <GitHubIcon color="inherit" />
+          <GitHubIcon color="inherit" sx={{ fontSize: 28 }}/>
         </a>
         <a className={styles.iconLink} href="https://www.linkedin.com/in/vlugand-lopez/" target="_blank" rel="noreferrer">
-          <LinkedInIcon color="inherit" />
+          <LinkedInIcon color="inherit" sx={{ fontSize: 28 }}/>
         </a>
         <a className={styles.iconLink} href="valentin.ll@outlook.com" target="_blank">
-        	<EmailIcon color="inherit" />
+        	<EmailIcon color="inherit" sx={{ fontSize: 28 }}/>
         </a>
       </div>
       <div className={styles.text}>

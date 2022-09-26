@@ -9,14 +9,14 @@ type listUserReposResponse = Endpoints["GET /repos/{owner}/{repo}"]["response"];
 
 const RepoCard = ({ repo }: { repo: listUserReposResponse["data"] }) => {
   return (
-    <div className={styles.repoItem}>
+    <a href={repo.clone_url} className={styles.repoItem}>
       <div className={styles.repoTitle}>{repo.name}</div>
       <p>{repo.description}</p>
-      <a href={repo.clone_url} className={styles.repoLink}>
+      <div className={styles.repoLink}>
         View Repository
         <div>&rarr;</div>
-      </a>
-    </div>
+      </div>
+    </a>
   );
 };
 
@@ -53,7 +53,11 @@ const Projects = () => {
             <RepoCard key={latestRepo.id} repo={latestRepo} />
           ))}
       </div>
-      <a className={styles.buttonLink} href="https://github.com/valentinllpz" target="_blank">
+      <a
+        className={styles.buttonLink}
+        href="https://github.com/valentinllpz"
+        target="_blank"
+      >
         <Button text="Visit GitHub" type="button" />
       </a>
     </section>
