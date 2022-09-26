@@ -69,6 +69,16 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           type="font/otf"
           crossOrigin=""
         />
+        <meta property="og:title" content="Valentin Lugand Lopez | Junior Developer | Paris" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://www.valentinlugandlopez.dev"
+        />
+        <meta
+          property="og:image"
+          content="https://www.valentinlugandlopez.dev/images/preview.png"
+        />
       </Head>
       {preload ? (
         <div className={themeContext.theme ? styles.dark : styles.light}>
